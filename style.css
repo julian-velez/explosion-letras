@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  
+  .explosion-container {
+    position: relative;
+    font-size: 48px;
+    text-align: center;
+    color: #ff5733;
+  }
+  
+  .explosion-text {
+    display: inline-block;
+    animation: explode 1s forwards;
+  }
+  
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(5);
+      opacity: 0;
+    }
+  }
+  
